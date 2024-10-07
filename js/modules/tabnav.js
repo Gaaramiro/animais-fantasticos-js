@@ -4,7 +4,7 @@ export default class TabNav {
     this.tabContent = document.querySelectorAll(content);
     this.activeClass = "ativo";
   }
-// atuva a tab de acordo com o index da mesma
+  // atuva a tab de acordo com o index da mesma
   activeTab(index) {
     this.tabContent.forEach((section) => {
       section.classList.remove(this.activeClass);
@@ -23,5 +23,6 @@ export default class TabNav {
       this.activeTab(0);
       this.addTabnavEvents();
     }
+    return this;
   }
 }
